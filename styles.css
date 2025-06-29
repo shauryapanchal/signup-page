@@ -1,5 +1,95 @@
-*{
+*, *::after, *::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(17 17 17);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+form{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: "Rubik Mono One", monospace, sans-serif;
+    
+}
+
+header{
+    margin: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.brand-logo{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 100px;
+    border-radius: 20px;
+    height: auto;
+}
+
+.brand-bg{
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.brand-bg:hover{
+    background-color: rgb(8 8 8);
+    transition: 0.5s;
+}
+
+.signup-bg{
+    min-width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-text{
+    color: red;
+}
+
+.info-card{
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    width: 90%;
+    height: 45%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.671);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    height: 60%;
+    width: 60%;
+}
+
+label{
+    position: relative;
+    left: 5px;
+    top: 25px;
+}
+
+input{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-bottom: 2px solid black;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 5px;
 }
